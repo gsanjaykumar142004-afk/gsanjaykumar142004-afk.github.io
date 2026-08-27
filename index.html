@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Kumar | Personal Website</title>
+    <style>
+        /* Personal Theme Settings */
+        :root {
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Profile Header */
+        header {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: var(--text-dark);
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin: 6px 0 16px 0;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #eff6ff;
+            color: var(--accent);
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
+
+        /* Section Layouts */
+        section {
+            margin-top: 35px;
+        }
+
+        section h2 {
+            font-size: 1.4rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 22px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 6px;
+        }
+
+        .card-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .card-date {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        .card ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .card li {
+            margin-bottom: 6px;
+        }
+
+        /* Skill Pills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .skill-pill {
+            background: #f1f5f9;
+            color: #334155;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            margin: 50px 0 20px 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            
+            <img src="photo.jpeg" alt="Sanjay Kumar" class="profile-pic">
+            <h1>Sanjay Kumar</h1>
+            <p class="subtitle">M.Tech CSE Student at IIIT Hyderabad | Systems & C++ Developer</p>
+            <p>📍 Hyderabad, India</p>
+
+            <div class="contact-buttons">
+               
+                <a href="https://drive.google.com/file/d/1Ucs8afT1DfcCUXlsVcYGru_-Hroex3K-/view?usp=sharing" target="_blank" class="btn btn-primary">📄 View Resume (Drive)</a>
+                <a href="mailto:gsanjaykumar142004@gmail.com" class="btn">📧 Email</a>
+                <a href="https://linkedin.com/SanjayKumar" target="_blank" class="btn">🔗 LinkedIn</a>
+                <a href="https://github.com/SanjayKumar" target="_blank" class="btn">💻 GitHub</a>
+            </div>
+        </header>
+
+        <!-- About Me -->
+        <section>
+            <h2>👋 About Me</h2>
+            <div class="card">
+                <p>Hi! I'm Sanjay. I am currently pursuing my M.Tech in Computer Science at IIIT Hyderabad[cite: 2]. I love building systems-level projects in C++, understanding operating systems, and solving algorithms problems[cite: 2]. Beyond coding, I enjoy competitive chess and leading community events[cite: 2].</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>🎓 Education</h2>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">IIIT Hyderabad</span>
+                    <span class="card-date">2026 – Present</span>
+                </div>
+                <p>M.Tech in Computer Science Engineering[cite: 2]</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">NIT Warangal</span>
+                    <span class="card-date">2021 – 2025</span>
+                </div>
+                <p>B.Tech in Metallurgical and Materials Engineering (CGPA: 6.61/10)[cite: 2]</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Narayana Junior College, Hyderabad</span>
+                    <span class="card-date">2019 – 2021</span>
+                </div>
+                <p>Intermediate MPC (Marks: 964/1000)[cite: 2]</p>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>💼 Experience</h2>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">BHEL Hyderabad — Summer Research Intern</span>
+                    <span class="card-date">May 2024 – Jul 2024</span>
+                </div>
+                <ul>
+                    <li>Analyzed corrosion protection data for sacrificial anode designs in marine environments[cite: 2].</li>
+                    <li>Built engineering models to identify optimal anode sizing and placement[cite: 2].</li>
+                    <li>Evaluated parameters like corrosion rates and fluid velocity to optimize lifespan[cite: 2].</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>🚀 Projects</h2>
+            <div class="card">
+                <div class="card-title">Code Search Engine</div>
+                <div class="skills-grid">
+                    <span class="skill-pill">C++</span>
+                    <span class="skill-pill">STL</span>
+                    <span class="skill-pill">Trie</span>
+                    <span class="skill-pill">Inverted Index</span>
+                </div>
+                <ul>
+                    <li>Built an inverted index search engine to quickly query C/C++ source code[cite: 2].</li>
+                    <li>Added Trie-based real-time autocomplete and prefix matching[cite: 2].</li>
+                    <li>Used TF-IDF/BM25 ranking algorithms to score relevance[cite: 2].</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Large File Reversal & Verification System</div>
+                <div class="skills-grid">
+                    <span class="skill-pill">C++</span>
+                    <span class="skill-pill">POSIX System Calls</span>
+                    <span class="skill-pill">Linux</span>
+                </div>
+                <ul>
+                    <li>Created low-level file reversal tools using POSIX calls (`open`, `read`, `write`, `lseek`)[cite: 2].</li>
+                    <li>Processed multi-GB files in chunks without loading everything into memory[cite: 2].</li>
+                    <li>Built verification tools for UNIX file permissions and file integrity checks[cite: 2].</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>🛠️ Technical Skills</h2>
+            <div class="card">
+                <p><strong>Languages:</strong> C++, C, Python, SQL[cite: 2]</p>
+                <div class="skills-grid" style="margin-top: 10px;">
+                    <span class="skill-pill">Data Structures & Algorithms</span>
+                    <span class="skill-pill">POSIX Calls</span>
+                    <span class="skill-pill">Multithreading</span>
+                    <span class="skill-pill">Operating Systems</span>
+                    <span class="skill-pill">MySQL</span>
+                    <span class="skill-pill">Git & GitHub</span>
+                    <span class="skill-pill">Linux</span>
+                    <span class="skill-pill">CMake</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Achievements -->
+        <section>
+            <h2>🏆 Achievements & Activities</h2>
+            <div class="card">
+                <ul>
+                    <li><strong>AIR 31</strong> in PGEE 2026 (IIIT Hyderabad M.Tech CSE)[cite: 2].</li>
+                    <li>Qualified <strong>GATE CS 2026</strong> with 98 percentile[cite: 2].</li>
+                    <li>Qualified <strong>JEE Main</strong> with AIR 39,219[cite: 2].</li>
+                    <li><strong>Chess:</strong> Silver Medalist in NIT Warangal Inter-Branch Tournament[cite: 2].</li>
+                    <li><strong>NSS Leadership:</strong> Joint Secretary; organized a 500+ blood donation camp[cite: 2].</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p> 2026 Sanjay Kumar. Built by ME.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
